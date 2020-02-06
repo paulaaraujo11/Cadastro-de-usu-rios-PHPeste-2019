@@ -1,0 +1,12 @@
+<div class="container">
+ <h1>Editar Usuário</h1>
+
+<form action="/editar-usuario?id=<?=$id?>" method="post">
+	NOME<br>
+	<input type="text" class="form-control" value="<?=$usuario['nome']?>" name="nome" required><br>
+	EMAIL<br>
+	<input type="email" class="form-control" value="<?=$usuario['email']?>" name="email" required><br>
+	SENHA<br>
+	<input type="password" class="form-control" name="senha"><br>
+	<button class="btn btn-primary btn-block">Enviar</button>
+</form>
